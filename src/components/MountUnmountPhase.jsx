@@ -1,14 +1,13 @@
-
-import { useEffect,useState } from "react";
-
+import { useEffect, useState } from "react";
 
 function MountUnmountPhase() {
   const [count, setCount] = useState(50);
 
   useEffect(() => {
     console.log("Mounting");
-    setCount((pre) =>pre + 2);
+    setCount((pre) => pre + 2);
   }, []);
+
 
   function changeHandler() {
     setCount((pre) => {
